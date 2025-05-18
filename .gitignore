@@ -1,0 +1,15 @@
+# Swap
+.*.swp
+
+# Session
+Session.vim
+Sessionx.vim
+
+# Temporary
+*~
+
+# Build
+*.o
+*.d
+main
+
