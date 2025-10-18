@@ -298,6 +298,7 @@ public:
 private:
   std::size_t m_size = 0u;
 
+  // TODO: Add `union` (see strict-aliasing-rule).
   // alignas(_Type) std::byte m_data[sizeof(_Type[_Capacity])];
   // alignas(_Type) std::byte m_data[sizeof(_Type)][_Capacity]; ??
   typename std::aligned_storage<sizeof(_Type), alignof(_Type)>::type m_data[_Capacity];
